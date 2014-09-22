@@ -61,4 +61,3 @@ Now that we have sessions, we can create conditionals on various actions in our 
 [authentication](http://www.millwoodonline.co.uk/blog/using-hassecurepassword-for-rails-authentication)
 
 [before_action](http://guides.rubyonrails.org/action_controller_overview.html#filters)
-
