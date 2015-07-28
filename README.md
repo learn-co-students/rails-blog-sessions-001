@@ -1,9 +1,3 @@
----
-tags: rails, sessions, application controller inheritance
-language: ruby
-resources: 5
----
-
 # Rails Blog: Authentication from Scratch using Sessions
 
 This is the fifth iteration of our Blog App.
