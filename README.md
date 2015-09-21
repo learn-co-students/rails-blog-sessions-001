@@ -11,7 +11,7 @@ We built out a user model a while back, but we haven't been doing much with it y
 1. Create a new migration for our users table that makes the following columns: email and password_digest (both strings). Create a validation on email presence and uniqueness on the user model.
 2. Add the ['bcrypt' gem](https://github.com/codahale/bcrypt-ruby/tree/master) to our Gemfile to use the Active Record [has_secure_password method](http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html#method-i-has_secure_password), which adds methods to set and authenticate against BCrypt passwords. We don't need to create validations for password presence, because it's included within this method.
 3. Now we have password and password_confirmation attributes (which we can permit in params on the users controller). Note that these aren't columns on our database, but attributes handled by the bcrypt gem.
-4. Let's fix our routes to have a route for signup that points to the new method on our users controller.
+4. Let's fix our routes to have a route for signup that points to the "new" method on our users controller.
 5. On the create method in the users controller, point a successful sign up to a root_path (posts index page) that we'll make in our routes file.
 6. Update our form for creating a new user to include email, password, and password confirmation. The passwords should have a password_field input.
 7. Let's also build out a _header partial that we render in application.html.erb that will have a Sign Up link, and other helpful navigation links.
