@@ -1,0 +1,12 @@
+
+<%= form_tag("/login", method: "post") do %>
+
+  <%= label_tag(:email, "Email") %>
+  <%= text_field_tag(:email, "", options = { name: "session[email]" }) %><br>
+
+  <%= label_tag(:password, "Password") %>
+  <%= text_field_tag(:password, "", options = { name: "session[password]" }) %><br>
+
+
+  <%= submit_tag("Log In") %>
+<% end %>
