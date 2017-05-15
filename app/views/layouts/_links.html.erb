@@ -1,0 +1,9 @@
+<% if @user == nil %>
+  <%= link_to('Sign Up', '/signup') %>
+  <%= link_to('Log In', '/login') %>
+
+  Log in to edit or delete your Post
+<% elsif @user.id != nil %>
+  <%= "Hello, #{@user.name}!" %><br>
+  <%= link_to("Log Out", '/logout') %>
+<% end %>
